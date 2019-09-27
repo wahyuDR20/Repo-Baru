@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://localhost/repo-baru/';
+=======
+$config['base_url'] = 'http://localhost/erp_smesco/';
+>>>>>>> aea8195a40a12ccffcf154371b1382a623431851
 
 /*
 |--------------------------------------------------------------------------

@@ -1,4 +1,5 @@
 <div class="page has-sidebar-left">
+<<<<<<< HEAD
     <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark pt-2 pb-2 pl-4 pr-2">
@@ -11,6 +12,9 @@
         </div>
     </div>
 </div>
+=======
+  
+>>>>>>> aea8195a40a12ccffcf154371b1382a623431851
     <div class="navbar navbar-expand d-flex navbar-dark justify-content-between bd-navbar blue accent-3 shadow">
         <div class="relative">
             <div class="d-flex">
@@ -133,6 +137,7 @@
                 <li class="footer p-2 text-center"><a href="#">View all</a></li>
             </ul>
         </li>
+<<<<<<< HEAD
         <li>
             <a class="nav-link " data-toggle="collapse" data-target="#navbarToggleExternalContent"
                aria-controls="navbarToggleExternalContent"
@@ -212,5 +217,16 @@
                 </div>
             </div>
         </li>
+=======
+       
+        <!-- Right Sidebar Toggle Button -->
+        <li>
+            <a href="<?php echo site_url('user_management/user/logout')?>" class="nav-link ml-2" onclick="return confirm('Yakin ingin Keluar?');">
+                <i class="icon-sign-out "></i>
+            </a>
+        </li>
+        <!-- User Account-->
+       
+>>>>>>> aea8195a40a12ccffcf154371b1382a623431851
     </ul>
 </div>

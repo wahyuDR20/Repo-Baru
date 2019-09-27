@@ -128,19 +128,22 @@ class User extends CI_Controller {
         $cek      = $this->user_model->getUserPass($result)->num_rows();
         $username = $result['username'];
 		$password = $result['password'];
-		print_r($result);
         $res      = $this->user_model->getByUser($username);
-
+		// print_r($res['nama']);
         if ($cek > 0) {
-            $sess_login = array(
+            $this->session->set_userdata(array(
                 'username'  => $username,
                 'password'  => $password,
-                'logged_in' => true,
+				'logged_in' => true,
+				'nama' 		=> $res['nama'],
+				'ids'		=> $res['id'],
                 'user_level_id'      => $res['user_level_id']
-            );
+			));
+			
 
-            $this->session->set_userdata($sess_login);
-			redirect("user_management/user");
+            // $this->session->set_userdata($sess_login);
+			// redirect("user_management/user");
+			$this->template->display('superadminpage');
         } else {
             $this->session->set_flashdata('userPass-salah', "<div class='alert alert-success alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
   <strong>Username/Password salah</div>");
